@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" width="900" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif">
+  <title>Palette family mapping</title>
+  <desc>Three template hue families are mapped onto the deck's own palette: the dominant family onto the deck primary, the second onto the deck secondary, and the third onto a harmonised theme accent.</desc>
+  <defs>
+    <marker id="ar2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#6B7280" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <text x="16" y="26" font-size="15" font-weight="600" fill="#111827">Families are mapped, not pixels</text>
+  <text x="16" y="46" font-size="11.5" fill="#6B7280">Each template hue family is sent to one deck color, then its members are spread along the lightness axis.</text>
+
+  <text x="16" y="82" font-size="12" font-weight="600" fill="#374151">Template palette (source)</text>
+  <g>
+    <rect x="16" y="94" width="80" height="46" rx="6" fill="#F26B21"/>
+    <rect x="104" y="94" width="80" height="46" rx="6" fill="#FC4A1A"/>
+    <rect x="192" y="94" width="80" height="46" rx="6" fill="#F7B733"/>
+    <rect x="280" y="94" width="80" height="46" rx="6" fill="#8E44AD"/>
+    <rect x="368" y="94" width="80" height="46" rx="6" fill="#27AE60"/>
+    <text x="56" y="156" font-size="10" fill="#6B7280" text-anchor="middle">#F26B21</text>
+    <text x="144" y="156" font-size="10" fill="#6B7280" text-anchor="middle">#FC4A1A</text>
+    <text x="232" y="156" font-size="10" fill="#6B7280" text-anchor="middle">#F7B733</text>
+    <text x="320" y="156" font-size="10" fill="#6B7280" text-anchor="middle">#8E44AD</text>
+    <text x="408" y="156" font-size="10" fill="#6B7280" text-anchor="middle">#27AE60</text>
+  </g>
+
+  <rect x="16" y="88" width="176" height="58" rx="8" fill="none" stroke="#F59E0B" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <rect x="280" y="88" width="80" height="58" rx="8" fill="none" stroke="#A855F7" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <rect x="368" y="88" width="80" height="58" rx="8" fill="none" stroke="#22C55E" stroke-width="1.6" stroke-dasharray="5 4"/>
+
+  <path d="M104 168 L104 212" fill="none" stroke="#6B7280" stroke-width="1.6" marker-end="url(#ar2)"/>
+  <path d="M320 168 L320 212" fill="none" stroke="#6B7280" stroke-width="1.6" marker-end="url(#ar2)"/>
+  <path d="M408 168 L408 212" fill="none" stroke="#6B7280" stroke-width="1.6" marker-end="url(#ar2)"/>
+  <text x="116" y="192" font-size="11" fill="#6B7280">family 1</text>
+  <text x="332" y="192" font-size="11" fill="#6B7280">family 2</text>
+  <text x="420" y="192" font-size="11" fill="#6B7280">family 3</text>
+
+  <text x="16" y="238" font-size="12" font-weight="600" fill="#374151">Deck palette (target)</text>
+  <g>
+    <rect x="16" y="250" width="80" height="46" rx="6" fill="#1B3A5C"/>
+    <rect x="104" y="250" width="80" height="46" rx="6" fill="#2A5C8F"/>
+    <rect x="192" y="250" width="80" height="46" rx="6" fill="#4A87C4"/>
+    <rect x="280" y="250" width="80" height="46" rx="6" fill="#2E8B8B"/>
+    <rect x="368" y="250" width="80" height="46" rx="6" fill="#1D6B3A"/>
+    <text x="56" y="312" font-size="10" fill="#6B7280" text-anchor="middle">#1B3A5C</text>
+    <text x="144" y="312" font-size="10" fill="#6B7280" text-anchor="middle">#2A5C8F</text>
+    <text x="232" y="312" font-size="10" fill="#6B7280" text-anchor="middle">#4A87C4</text>
+    <text x="320" y="312" font-size="10" fill="#6B7280" text-anchor="middle">#2E8B8B</text>
+    <text x="408" y="312" font-size="10" fill="#6B7280" text-anchor="middle">#1D6B3A</text>
+  </g>
+
+  <rect x="16" y="244" width="256" height="58" rx="8" fill="none" stroke="#1D4ED8" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <rect x="280" y="244" width="80" height="58" rx="8" fill="none" stroke="#0E7490" stroke-width="1.6" stroke-dasharray="5 4"/>
+  <rect x="368" y="244" width="80" height="58" rx="8" fill="none" stroke="#15803D" stroke-width="1.6" stroke-dasharray="5 4"/>
+
+  <rect x="470" y="88" width="414" height="216" rx="10" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1.2"/>
+  <text x="490" y="112" font-size="12.5" font-weight="600" fill="#111827">Rules behind the arrows</text>
+  <text x="490" y="138" font-size="11.5" fill="#374151">1. Family 1 is the heaviest by weighted area, so it</text>
+  <text x="502" y="156" font-size="11.5" fill="#374151">goes to the deck primary and keeps its internal</text>
+  <text x="502" y="174" font-size="11.5" fill="#374151">lightness order: brightest stays brightest.</text>
+  <text x="490" y="200" font-size="11.5" fill="#374151">2. Family 2 takes the next deck color, family 3 the</text>
+  <text x="502" y="218" font-size="11.5" fill="#374151">next again.</text>
+  <text x="490" y="244" font-size="11.5" fill="#374151">3. If the deck runs out of colors, a theme accent is</text>
+  <text x="502" y="262" font-size="11.5" fill="#374151">borrowed only when it is close enough in hue</text>
+  <text x="502" y="280" font-size="11.5" fill="#374151">(&lt;= 90 degrees). Otherwise the family is derived</text>
+  <text x="502" y="296" font-size="11.5" fill="#374151">from the primary instead of importing a clashing</text>
+  <text x="502" y="312" font-size="11.5" fill="#374151">accent.</text>
+</svg>

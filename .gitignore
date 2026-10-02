@@ -1,0 +1,11 @@
+# Backups from the engine
+*.recolor.bak
+*.tmp
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/

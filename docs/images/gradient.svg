@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="900" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif">
+  <title>Gradient handling</title>
+  <desc>A warm two stop gradient is remapped as a single hue family so the gradient survives; a naive mapping would split it into two unrelated hues.</desc>
+  <defs>
+    <linearGradient id="gbad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FC4A1A"/>
+      <stop offset="100%" stop-color="#F7B733"/>
+    </linearGradient>
+    <linearGradient id="ggood" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2A5C8F"/>
+      <stop offset="100%" stop-color="#4A87C4"/>
+    </linearGradient>
+    <linearGradient id="gwrong" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2A5C8F"/>
+      <stop offset="100%" stop-color="#F5A524"/>
+    </linearGradient>
+  </defs>
+
+  <text x="16" y="26" font-size="15" font-weight="600" fill="#111827">Gradients keep one hue</text>
+  <text x="16" y="46" font-size="11.5" fill="#6B7280">All stops of one gradient are forced into the same family, then spread along lightness. Splitting them would destroy the gradient.</text>
+
+  <text x="16" y="84" font-size="12" font-weight="600" fill="#374151">Source gradient</text>
+  <rect x="16" y="94" width="360" height="44" rx="8" fill="url(#gbad)"/>
+  <text x="196" y="154" font-size="11" fill="#6B7280" text-anchor="middle">#FC4A1A to #F7B733, both warm</text>
+
+  <text x="16" y="192" font-size="12" font-weight="600" fill="#065F46">Correct result</text>
+  <rect x="16" y="202" width="360" height="44" rx="8" fill="url(#ggood)"/>
+  <text x="196" y="262" font-size="11" fill="#6B7280" text-anchor="middle">#2A5C8F to #4A87C4, one hue, direction kept</text>
+  <path d="M388 224 L444 224" fill="none" stroke="#047857" stroke-width="1.6"/>
+  <text x="452" y="224" font-size="11.5" fill="#065F46" dominant-baseline="central">stops merged into a single family</text>
+
+  <text x="16" y="288" font-size="11.5" fill="#991B1B">A gradient whose two stops were mapped to two different deck colors would come out as blue to amber, which reads as a mistake rather than a gradient.</text>
+
+  <rect x="470" y="94" width="414" height="150" rx="10" fill="#FEF2F2" stroke="#FECACA" stroke-width="1.2"/>
+  <text x="490" y="118" font-size="12.5" font-weight="600" fill="#991B1B">What a naive mapper produces</text>
+  <rect x="490" y="134" width="374" height="36" rx="6" fill="url(#gwrong)"/>
+  <text x="490" y="192" font-size="11.5" fill="#7F1D1D">Two hue families, two unrelated deck colors,</text>
+  <text x="490" y="210" font-size="11.5" fill="#7F1D1D">so the fill no longer reads as a gradient at all.</text>
+  <text x="490" y="232" font-size="11" fill="#991B1B">This is why merge_gradient_clusters exists.</text>
+</svg>

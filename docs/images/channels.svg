@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="900" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif">
+  <title>Three ways to run it</title>
+  <desc>Channel A is a WPS macro running inside the application, channel B is a dependency free Python engine that edits the file, channel C is a live editor SDK limited to flat colors.</desc>
+
+  <text x="16" y="26" font-size="15" font-weight="600" fill="#111827">Pick the channel that fits where you are</text>
+
+  <g>
+    <rect x="16" y="46" width="284" height="230" rx="12" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1.2"/>
+    <rect x="32" y="62" width="56" height="22" rx="11" fill="#1D4ED8"/>
+    <text x="60" y="73" font-size="11.5" font-weight="600" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">A</text>
+    <text x="100" y="73" font-size="13.5" font-weight="600" fill="#1E3A8A" dominant-baseline="central">WPS macro</text>
+    <text x="32" y="106" font-size="11.5" fill="#374151">Runs inside the WPS process.</text>
+    <text x="32" y="124" font-size="11.5" fill="#374151">Select the object, run one macro.</text>
+    <text x="32" y="148" font-size="11.5" font-weight="600" fill="#1E3A8A">Handles</text>
+    <text x="32" y="166" font-size="11.5" fill="#374151">fills, gradients, lines, text, groups,</text>
+    <text x="32" y="184" font-size="11.5" fill="#374151">tables, chart series</text>
+    <text x="32" y="208" font-size="11.5" font-weight="600" fill="#1E3A8A">Use it when</text>
+    <text x="32" y="226" font-size="11.5" fill="#374151">you are editing in WPS right now</text>
+    <text x="32" y="250" font-size="11" fill="#6B7280">Ctrl+Z undoes every step</text>
+  </g>
+
+  <g>
+    <rect x="308" y="46" width="284" height="230" rx="12" fill="#ECFDF5" stroke="#6EE7B7" stroke-width="1.2"/>
+    <rect x="324" y="62" width="56" height="22" rx="11" fill="#047857"/>
+    <text x="352" y="73" font-size="11.5" font-weight="600" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">B</text>
+    <text x="392" y="73" font-size="13.5" font-weight="600" fill="#065F46" dominant-baseline="central">Python engine</text>
+    <text x="324" y="106" font-size="11.5" fill="#374151">Rewrites OOXML directly.</text>
+    <text x="324" y="124" font-size="11.5" fill="#374151">No third party packages.</text>
+    <text x="324" y="148" font-size="11.5" font-weight="600" fill="#065F46">Handles</text>
+    <text x="324" y="166" font-size="11.5" fill="#374151">every gradient stop, charts,</text>
+    <text x="324" y="184" font-size="11.5" fill="#374151">SmartArt color parts, batch runs</text>
+    <text x="324" y="208" font-size="11.5" font-weight="600" fill="#065F46">Use it when</text>
+    <text x="324" y="226" font-size="11.5" fill="#374151">batch processing, or WPS has no</text>
+    <text x="324" y="244" font-size="11.5" fill="#374151">macro component installed</text>
+    <text x="324" y="264" font-size="11" fill="#6B7280">Writes a .bak before overwriting</text>
+  </g>
+
+  <g>
+    <rect x="600" y="46" width="284" height="230" rx="12" fill="#F9FAFB" stroke="#D1D5DB" stroke-width="1.2"/>
+    <rect x="616" y="62" width="56" height="22" rx="11" fill="#6B7280"/>
+    <text x="644" y="73" font-size="11.5" font-weight="600" fill="#FFFFFF" text-anchor="middle" dominant-baseline="central">C</text>
+    <text x="684" y="73" font-size="13.5" font-weight="600" fill="#374151" dominant-baseline="central">Editor SDK</text>
+    <text x="616" y="106" font-size="11.5" fill="#374151">Live edits on an open document.</text>
+    <text x="616" y="124" font-size="11.5" fill="#374151">Flat colors only.</text>
+    <text x="616" y="148" font-size="11.5" font-weight="600" fill="#374151">Handles</text>
+    <text x="616" y="166" font-size="11.5" fill="#374151">fill and border color</text>
+    <text x="616" y="190" font-size="11.5" font-weight="600" fill="#991B1B">Does not handle</text>
+    <text x="616" y="208" font-size="11.5" fill="#374151">gradients, tables or charts</text>
+    <text x="616" y="232" font-size="11.5" font-weight="600" fill="#374151">Use it when</text>
+    <text x="616" y="250" font-size="11.5" fill="#374151">a few flat blocks need a quick fix</text>
+  </g>
+</svg>

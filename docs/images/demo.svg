@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" width="900" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif">
+  <title>Before and after on a sample slide</title>
+  <desc>A generic sample slide whose deck palette is deep blue and teal, with an inserted diagram in orange and purple. Before, the diagram clashes. After, it uses the deck palette while keeping its own lightness structure.</desc>
+  <defs>
+    <linearGradient id="dembad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FC4A1A"/>
+      <stop offset="100%" stop-color="#F7B733"/>
+    </linearGradient>
+    <linearGradient id="demgood" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2A5C8F"/>
+      <stop offset="100%" stop-color="#4A87C4"/>
+    </linearGradient>
+  </defs>
+
+  <text x="16" y="26" font-size="15" font-weight="600" fill="#111827">Before and after</text>
+  <text x="16" y="46" font-size="11.5" fill="#6B7280">Sample deck, palette #1B3A5C and #2E8B8B. A vendor diagram was pasted onto slide 2.</text>
+
+  <text x="16" y="78" font-size="12.5" font-weight="600" fill="#991B1B">Before</text>
+  <rect x="16" y="90" width="430" height="226" rx="10" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1.2"/>
+  <rect x="30" y="104" width="90" height="198" rx="6" fill="#F2F5F7"/>
+  <rect x="42" y="118" width="66" height="12" rx="3" fill="#1B3A5C"/>
+  <rect x="42" y="138" width="66" height="12" rx="3" fill="#9AA5B1"/>
+  <rect x="42" y="154" width="66" height="12" rx="3" fill="#9AA5B1"/>
+  <rect x="42" y="170" width="42" height="12" rx="3" fill="#2E8B8B"/>
+  <rect x="134" y="118" width="150" height="16" rx="3" fill="#1B3A5C"/>
+  <rect x="134" y="146" width="296" height="62" rx="6" fill="#EDF1F5" stroke="#C7D2DE" stroke-width="1"/>
+  <rect x="134" y="222" width="140" height="60" rx="6" fill="#2E8B8B"/>
+
+  <circle cx="216" cy="250" r="20" fill="#F26B21"/>
+  <circle cx="264" cy="250" r="20" fill="#8E44AD"/>
+  <circle cx="312" cy="250" r="20" fill="#27AE60"/>
+  <path d="M236 250 L244 250" stroke="#7F3F00" stroke-width="2"/>
+  <path d="M284 250 L292 250" stroke="#7F3F00" stroke-width="2"/>
+  <rect x="340" y="230" width="60" height="40" rx="4" fill="url(#dembad)"/>
+  <text x="380" y="258" font-size="10" text-anchor="middle" fill="#FFFFFF">arrow</text>
+
+  <text x="482" y="78" font-size="12.5" font-weight="600" fill="#065F46">After</text>
+  <rect x="482" y="90" width="430" height="226" rx="10" fill="#FFFFFF" stroke="#86EFAC" stroke-width="1.6"/>
+  <rect x="496" y="104" width="90" height="198" rx="6" fill="#F2F5F7"/>
+  <rect x="508" y="118" width="66" height="12" rx="3" fill="#1B3A5C"/>
+  <rect x="508" y="138" width="66" height="12" rx="3" fill="#9AA5B1"/>
+  <rect x="508" y="154" width="66" height="12" rx="3" fill="#9AA5B1"/>
+  <rect x="508" y="170" width="42" height="12" rx="3" fill="#2E8B8B"/>
+  <rect x="600" y="118" width="150" height="16" rx="3" fill="#1B3A5C"/>
+  <rect x="600" y="146" width="296" height="62" rx="6" fill="#EDF1F5" stroke="#C7D2DE" stroke-width="1"/>
+  <rect x="600" y="222" width="140" height="60" rx="6" fill="#2E8B8B"/>
+
+  <circle cx="682" cy="250" r="20" fill="#2A5C8F"/>
+  <circle cx="730" cy="250" r="20" fill="#1D6B3A"/>
+  <circle cx="778" cy="250" r="20" fill="#2E8B8B"/>
+  <path d="M702 250 L710 250" stroke="#12283F" stroke-width="2"/>
+  <path d="M750 250 L758 250" stroke="#12283F" stroke-width="2"/>
+  <rect x="806" y="230" width="60" height="40" rx="4" fill="url(#demgood)"/>
+  <text x="836" y="258" font-size="10" text-anchor="middle" fill="#FFFFFF">arrow</text>
+
+  <text x="16" y="332" font-size="11.5" fill="#4B5563">Deck shapes are untouched. Only the pasted diagram changed, and it kept its relative lightness: the brightest node is still the brightest.</text>
+</svg>
